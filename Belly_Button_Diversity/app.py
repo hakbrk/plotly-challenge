@@ -40,7 +40,6 @@ def index():
 @app.route("/names")
 def names():
     """Return a list of sample names."""
-
     # Use Pandas to perform the sql query
     stmt = db.session.query(Samples).statement
     df = pd.read_sql_query(stmt, db.session.bind)
