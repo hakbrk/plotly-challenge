@@ -13,7 +13,7 @@ function buildMetadata(sample) {
           });
 
           ///Gauge code modified from code found at https://codepen.io/plotly/pen/rxeZME
-          var level = response.WFREQ*20;
+          var level = response.WFREQ;
           let text = response.WFREQ;
           // Trig to calc meter point
           var degrees = 180 - level,
@@ -37,7 +37,7 @@ function buildMetadata(sample) {
             name: 'Test',
             text: text,
             hoverinfo: 'text+name'},
-            { values: [90/9, 90/9, 90/9, 90/9, 90/9, 90/9, 90/9, 90/9, 90/9, 90],
+            { values: [9/9, 9/9, 9/9, 9/9, 9/9, 9/9, 9/9, 9/9, 9/9, 9],
             rotation: 90,
             text: ['8-9','7-8','6-7','5-6', '4-5', '3-4', '2-3',
                 '1-2', '0-1', ''],
