@@ -14,7 +14,7 @@ function buildMetadata(sample) {
 
           ///Gauge code modified from code found at https://codepen.io/plotly/pen/rxeZME
           var level = response.WFREQ*20;
-
+          let text = response.WFREQ;
           // Trig to calc meter point
           var degrees = 180 - level,
              radius = .5;
@@ -35,7 +35,7 @@ function buildMetadata(sample) {
             marker: {size: 28, color:'850000'},
             showlegend: false,
             name: 'Washes',
-            text: level/20,
+            text: text,
             hoverinfo: 'text+name'},
             { values: [90/9, 90/9, 90/9, 90/9, 90/9, 90/9, 90/9, 90/9, 90/9, 90],
             rotation: 90,
