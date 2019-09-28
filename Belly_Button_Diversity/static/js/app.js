@@ -13,7 +13,7 @@ function buildMetadata(sample) {
           });
 
           ///Gauge code modified from code found at https://codepen.io/plotly/pen/rxeZME
-          var level = response.WFREQ;
+          var level = response.WFREQ*20;
           // Trig to calc meter point
           var degrees = 180 - level,
              radius = .5;
