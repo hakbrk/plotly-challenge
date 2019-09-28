@@ -35,7 +35,7 @@ function buildMetadata(sample) {
             marker: {size: 28, color:'850000'},
             showlegend: false,
             name: 'Washes',
-            text: level,
+            text: level/20,
             hoverinfo: 'text+name'},
             { values: [90/9, 90/9, 90/9, 90/9, 90/9, 90/9, 90/9, 90/9, 90/9, 90],
             rotation: 90,
